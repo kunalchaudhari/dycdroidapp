@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Rahul Verma"
+        android:hint="Username"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etDiscussionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:text="eChai Demo Day"
+        android:hint="Discussion Title" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etDiscussionDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Discussion Description"
+        android:text="eChai Ventures and MICA Incubator are hosting the 8th edition of eChai Demo Day, the quarterly showcase of innovative products &amp; ventures in front of the large entrepreneurial community. "
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnCreateNewDiscussion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Discussion" />
+
+</LinearLayout>
