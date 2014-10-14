@@ -5,8 +5,8 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "com.example.rahul.dycdroidapp"
-        minSdkVersion 14
+        applicationId "echaiventures.designyourcity"
+        minSdkVersion 17
         targetSdkVersion 20
         versionCode 1
         versionName "1.0"
