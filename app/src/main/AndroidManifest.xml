@@ -13,12 +13,33 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.default" />
             </intent-filter>
         </activity>
         <activity
             android:name=".DiscussionPage"
             android:label="@string/title_activity_discussion_page" >
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".issue.IssueMain"
+            android:label="@string/title_activity_issue_main" >
+        </activity>
+        <activity
+            android:name=".issue.IssueCreate"
+            android:label="@string/title_activity_issue_create" >
+        </activity>
+        <activity
+            android:name=".issue.IssueDiscuss"
+            android:label="@string/title_activity_issue_discuss" >
         </activity>
     </application>
 

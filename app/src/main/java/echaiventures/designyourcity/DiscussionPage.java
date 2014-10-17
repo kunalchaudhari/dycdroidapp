@@ -1,10 +1,5 @@
 package echaiventures.designyourcity;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,11 +8,15 @@ import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 
 public class DiscussionPage extends Activity implements OnClickListener{
 
@@ -26,7 +25,7 @@ public class DiscussionPage extends Activity implements OnClickListener{
 
     ListView listView;
     TextView tvTitle, tvDescription, tvStartedBy, tvStartedOn;
-    Button btnLike, btnShare, btnComment, btnPost;
+    Button btnLike, btnShare, btnComment;
     EditText etComment;
 
     int likeCounter;
@@ -45,7 +44,7 @@ public class DiscussionPage extends Activity implements OnClickListener{
 
         btnLike = (Button) findViewById(R.id.btnLike);
         btnShare = (Button) findViewById(R.id.btnShare);
-        btnPost = (Button) findViewById(R.id.btnPost);
+        btnComment = (Button) findViewById(R.id.btnComment);
         etComment = (EditText)findViewById(R.id.etComment);
 
         likeCounter = 0;
@@ -53,7 +52,7 @@ public class DiscussionPage extends Activity implements OnClickListener{
 
         adapter = new MyAdapter(this, item);
 
-        btnPost.setOnClickListener(this);
+        btnComment.setOnClickListener(this);
         btnLike.setOnClickListener(this);
 
     }
@@ -81,7 +80,6 @@ public class DiscussionPage extends Activity implements OnClickListener{
         tvStartedBy.setTextSize(TypedValue.COMPLEX_UNIT_SP, 10);
         tvStartedBy.setTextColor(Color.BLACK);
         tvStartedBy.setTypeface(null, Typeface.BOLD_ITALIC);
-        //getActionBar().setTitle("By : "+startedBy);
 
         tvStartedOn.setText("On : "+startedOn);
         tvStartedOn.setTextSize(TypedValue.COMPLEX_UNIT_SP, 10);
@@ -99,7 +97,7 @@ public class DiscussionPage extends Activity implements OnClickListener{
                 btnLike.setTextColor(Color.BLUE);
                 break;
 
-            case R.id.btnPost:
+            case R.id.btnComment:
                 listView.setAdapter(adapter);
                 listCommentInListView();
                 etComment.setText("");

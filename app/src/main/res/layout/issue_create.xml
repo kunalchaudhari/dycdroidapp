@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="echaiventures.designyourcity.issue.IssueCreate">
+
+    <TextView
+        android:id="@+id/tvIssueType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usename"
+        android:text="Chandni"
+        android:inputType="textPersonName">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etIssueTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Issue Title"
+        android:text="Traffic Problem in India" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/etIssueDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Issue Description"
+        android:text="Traffic on roads may consist of pedestrians, ridden or herded animals, vehicles, streetcars and other conveyances, either singly or together, while using the public way for purposes of travel."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnCreateNewIssue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discuss Issue" />
+</LinearLayout>

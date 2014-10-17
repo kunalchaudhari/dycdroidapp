@@ -6,5 +6,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_discussion_page">DiscussionPage</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_activity_issue_main">IssueMain</string>
+    <string name="title_activity_issue_create">IssueCreate</string>
+    <string name="title_activity_issue_discuss">IssueDiscuss</string>
 
 </resources>

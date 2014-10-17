@@ -36,7 +36,6 @@ public class MyActivity extends Activity {
 
         btnNewDiscussion = (Button) findViewById(R.id.btnCreateNewDiscussion);
         btnNewDiscussion.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
                 Intent i = new Intent(MyActivity.this, DiscussionPage.class);
